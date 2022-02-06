@@ -21,4 +21,17 @@ const f2 = f1();
 console.log(f2);
 console.log(f2());
 
-//////
+///// first class citizen ///// - 생활코딩
+const words = ["spray", "lmit", "elite", "exuberant", "destruction", "present"];
+
+function cb(elem) {
+  console.log(elem);
+  if (elem.length > 6) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+const newWords = words.filter(cb);
+console.log(newWords);
